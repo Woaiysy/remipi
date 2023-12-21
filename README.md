@@ -152,8 +152,8 @@
                 
             </li>
             <li>
-                <h3><a href="链接到安装包3的URL">安装包3</a></h3>
-                <p>描述：需添加请联系LSH</p>
+                <h3><a href="https://d.apkpure.com/b/APK/com.beint.zangi?version=latest">zangi</a></h3>
+                <p>描述：嗨</p>
                 <p></p>
             </li>
         </ul>
