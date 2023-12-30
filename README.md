@@ -152,22 +152,29 @@
                 
             </li>
             <li>
-                <h3><a href="https://d.apkpure.com/b/APK/com.beint.zangi?version=latest">zangi</a></h3>
+                <h3><a href="https://d.apkpure.com/b/APK/com.skype.raider?version=latest">Skype</a></h3>
+                <p>描述：需添加请联系LSH</p>
+                <p></p>
+            </li>
+
+             <li>
+                <h3><a href="https://d.apkpure.com/b/APK/com.beint.zangi?version=latest">Zangi</a></h3>
                 <p>描述：嗨</p>
                 <p></p>
             </li>
+                       
             <li>
                 <h3><a href="https://d.apkpure.com/b/APK/com.estmob.android.sendanywhere?version=latest">send any where</a></h3>
                 <p>描述：这里这里</p>
                 <p></p>
             </li>
         </ul>
-    
+
         <div class="common-links">
             <h2>常用链接：</h2>
             <p>当通过浏览器进入Zoom会议： https://zoom.us/join</p>
             <p>当通过浏览器进入Webex会议： https://signin.webex.com/join</p>
-            <p>链接3： 需添加请联系LSH</p>
+            <p><a href="https://download-a.akamaihd.net/files/media_publication/c5/nwt_CHS.epub">圣经新世界译本（2019年修订版）EPUB格式下载</a></p>
         </div>
     </div>
 
