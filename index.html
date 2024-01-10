@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JW</title>
+    <title>还没想好这里写什么</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
             color: #333;
             opacity: 0;
             transform: translateY(-20px);
-            transition: opacity 2s ease, transform 2s ease;
+            transition: opacity 3s ease, transform 3s ease;
         }
 
         h2 {
@@ -110,10 +110,12 @@
         <h1 id="welcome-heading">欢迎你！</h1>
 
         <div class="page-intro">
-            <h2>我决不撇下你，决不离弃你。—— 来13:5</h2>
-            <p></p>
+            <h3>嗨嗨！</h3>
+            <p id="real-time"></p>
         </div>
+        
 
+        
         <h2>可用的安装包：</h2>
         <input type="text" id="search" placeholder="搜索安装包">
         <button class="search-button" onclick="searchPackages()">搜索</button>
@@ -121,24 +123,35 @@
 
         <ul id="package-list">
             <!-- 添加15个安装包链接位置 -->
+            <h2>以下为适用于Android系统手机的APK格式安装包：</h2>
             <li>
                 <h3><a href="https://www.webex.com/content/dam/wbx/us/images/downloads/rebrand/mc.apk">Webex Meetings</a></h3>
                 <p>描述：来自Cisco Systems, Inc
-                    用于安排会议、开始会议等一系列操作
+                    <br>用于安排会议、开始会议等一系列操作
                     <br><b>请注意</b>:此安装包仅适用于Android 8.0及更高版本
                 </p>
-                <p>版本：43.9.0
-                    <br>最近更新日期:2023年9月3日
+                <p>版本：43.12.0
+                    <br>最近更新日期:2023年12月11日
                 </p>
             </li>
             <li>
                 <h3><a href="https://www.webex.com/content/dam/wbx/us/images/downloads/rebrand/uc.apk">Webex</a></h3>
                 <p>描述：来自Cisco Systems, Inc
-                    用于进行会议，当会议前的准备工作完成后将会自动跳转至此软件。需搭配Webex Meetings一起使用。
+                    <br>用于进行会议，当会议前的准备工作完成后将会自动跳转至此软件。需搭配Webex Meetings一起使用。
                     <br><b>请注意</b>:此安装包仅适用于Android 8.0及更高版本
                 </p>
-                <p>版本：43.9.0.113
-                    <br>最近更新日期:2023年9月6日
+                <p>版本：43.12.0.160
+                    <br>最近更新日期:2023年12月20日
+                </p>
+            </li>
+            <li>
+                <h3><a href="https://d.apkpure.com/b/APK/us.zoom.videomeetings?versionCode=6517000&nc=arm64-v8a%2Carmeabi-v7a%2Cx86%2Cx86_64&sv=23">Zoom</a></h3>
+                <p>描述：来自zoom.us
+                    <br>用于进行会议。
+                    <br><b>请注意</b>:此安装包仅适用于Android 6.0 及更高版本且需要配合VPN下载
+                </p>
+                <p>版本：5.17.0.18287
+                    <br>最近更新日期:2023年12月22日
                 </p>
             </li>
             <li>
@@ -153,33 +166,89 @@
             </li>
             <li>
                 <h3><a href="https://d.apkpure.com/b/APK/com.skype.raider?version=latest">Skype</a></h3>
-                <p>描述：需添加请联系LSH</p>
-                <p></p>
+                <p>描述：来自Skype
+                    <br>通话。聊天。搜索。尽在Skype中。
+                    <br><b>请注意</b>:此安装包仅适用于Android 8.0及更高版本且需要配合VPN下载
+                </p>
+                <p>版本：8.110.0.218
+                        <br>最近更新日期:2023年12月13日
+                </p>
+                        
             </li>
 
              <li>
                 <h3><a href="https://d.apkpure.com/b/APK/com.beint.zangi?version=latest">Zangi</a></h3>
-                <p>描述：嗨</p>
-                <p></p>
+                <p>描述：来自Secret Phone, Inc
+                    <br>Zangi进行免费的高清品质语音和视频通话，以及免费聊天。
+                    <br><b>请注意</b>:此安装包仅适用于Android 5.0及更高版本且需要配合VPN下载
+                </p>
+                <p>版本：5.9.1
+                    <br>最近更新日期:2023年12月29日
+                </p>
             </li>
-                       
+
             <li>
-                <h3><a href="https://d.apkpure.com/b/APK/com.estmob.android.sendanywhere?version=latest">send any where</a></h3>
-                <p>描述：这里这里</p>
-                <p></p>
+                <h3><a href="https://www.mt711.com/download/?output=html&pub=jwlb&fileformat=APK&alllangs=1&langwritten=CHS&txtCMSLang=CHS&isBible=0">紫色</a></h3>
+                <p>描述：来自万豪酒店
+                    <br>
+                    <br><b>请注意</b>:此安装包仅适用于Android 7.0及更高版本
+                </p>
+                <p>版本：14.1.2 (357710)
+                    <br>最近更新日期:2023年12月6日
+                </p>
+            </li>
+            <h2>以下为适用于Windows系统电脑的exe格式安装包：</h2>
+            <li>
+                <h3><a href=https://binaries.webex.com/WebexTeamsDesktop-Windows-Web-Installer/Webex.exe>Webex For Windows (64 bit)</a></h3>
+                <p>描述：来自Cisco Systems, Inc
+                    <br>用于安排会议、开始会议等一系列操作
+                    <br><b></b>
+                </p>
+                <p>版本：43.12.0.28111
+                    <br>最近更新日期:2023年12月8日
+                </p>
+            </li>
+            <li>
+                <h3><a href=https://zoom.us/client/5.17.1.28914/ZoomInstallerFull.exe?archType>Zoom For Windows (64 bit)</a></h3>
+                <p>描述：来自zoom.us
+                    <br>用于进行会议。
+                    <br><b></b>
+                </p>
+                <p>版本：5.17.1 (28914)
+                    <br>最近更新日期:2024年1月4日
+                </p>
+            </li>
+            <h2>以下为适用于Mac系统电脑的dmg格式安装包：</h2>
+            <li>
+                <h3><a href=https://sweetcandy.tk/assets/archives/MacOS/ClashXPro-v1.98.0.3/ClashX.dmg>ClashX Pro</a></h3>
+                <p>描述：适用于Mac系统的VPN软件
+                    <br>
+                    <br><b></b>
+                </p>
+                <p>版本：1.98.0.3
+                    <br>最近更新日期:
+                </p>
             </li>
         </ul>
 
+        <br>
+        <br>
+
         <div class="common-links">
             <h2>常用链接：</h2>
+            <h3>灰色链接请复制后在安全的浏览器中打开，蓝色链接点击即可进入</h3>
             <p>当通过浏览器进入Zoom会议： https://zoom.us/join</p>
             <p>当通过浏览器进入Webex会议： https://signin.webex.com/join</p>
-            <p><a href="https://download-a.akamaihd.net/files/media_publication/c5/nwt_CHS.epub">圣经新世界译本（2019年修订版）EPUB格式下载</a></p>
+            <br>
+            <p>注：以下出版物均采用<b>中文简体（普通话）</b>作为参考语言</p>
+            <p><a href="https://akdl1.isa357.com/files/media_publication/c5/nwt_CHS.epub">智慧话语（2019年修订版）EPUB格式下载</a></p>
+            <p><a href="https://akdl1.isa357.com/files/media_publication/00/lff_CHS.epub">永远享受EPUB格式下载</a></p>
+            <p><a href="https://akdl1.isa357.com/files/media_publication/0c/lffi_CHS.epub">永远享受体验版EPUB格式下载</a></p>
         </div>
     </div>
 
     <div class="footer">
-        <p>今天你读圣经了嘛？</p>
+        <p>🤔哦？不要看我哦~😀</p>
     </div>
 
     <script>
@@ -212,6 +281,52 @@
                 packages[i].style.display = "block";
             }
         }
+        
+        function updateRealTime() {
+    var realTimeElement = document.getElementById("real-time");
+    var currentTime = new Date();
+    var year = currentTime.getFullYear();
+    var month = currentTime.getMonth() + 1; // 月份从0开始，所以要加1
+    var day = currentTime.getDate();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+
+    // 格式化时间，确保单个数字前面有零
+    month = (month < 10) ? "0" + month : month;
+    day = (day < 10) ? "0" + day : day;
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    var formattedTime = year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
+    realTimeElement.textContent = "当前时间：" + formattedTime;
+}
+
+// 在页面加载时初始化实时时间
+updateRealTime();
+
+// 设置定时器，每秒更新一次实时时间
+setInterval(updateRealTime, 1000);
+
+
+    // 简单的身份验证函数
+    function authenticate() {
+        var userInput = prompt("身份验证:");
+        var password = "0917"; // 替换为你的实际密码
+
+        if (userInput === password) {
+            alert("身份验证成功！"); // 可以替换为其他处理逻辑
+        } else {
+            alert("身份验证失败，请重试或联系技术支持。");
+            window.location.href = "login.html"; // 可以重定向到登录页面
+        }
+    }
+
+    // 在这里调用身份验证函数，你可以根据需要的时机调用
+    authenticate();
+
+
     </script>
 </body>
 </html>
