@@ -103,6 +103,16 @@
             margin-bottom: 20px;
         }
 
+        /* 将搜索框的样式应用到提交留言的文本框 */
+        #userMessage {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -114,8 +124,27 @@
             <p id="real-time"></p>
         </div>
         
-
+        <div id="messageBox">
+            <h2>留言板</h2>
+            <textarea id="userMessage" placeholder="在这里留下你的评论"></textarea>
+            <button onclick="addMessage()">提交留言</button>
+            <ul id="commentList"></ul>
+        </div>
         
+    <!-- 添加图文教程容器和展开按钮 -->
+    <div id="tutorialContainer" style="display: none; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <!-- 在这里添加图文教程的内容 -->
+        <h2>图文教程</h2>
+        <p>这是一个简单的图文教程，以下是一张图片：</p>
+        <!-- 插入图片 -->
+        <img src="链接到你的图片的URL" alt="图片描述">
+
+        <!-- 继续添加其他内容 -->
+        <p>接下来的内容...</p>
+    </div>
+    <button id="toggleTutorialBtn" onclick="toggleTutorial()" style="background-color: #0077cc; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">展开图文教程</button>
+
+
         <h2>可用的安装包：</h2>
         <input type="text" id="search" placeholder="搜索安装包">
         <button class="search-button" onclick="searchPackages()">搜索</button>
@@ -145,7 +174,7 @@
                 </p>
             </li>
             <li>
-                <h3><a href="https://d.apkpure.com/b/APK/us.zoom.videomeetings?versionCode=6517000&nc=arm64-v8a%2Carmeabi-v7a%2Cx86%2Cx86_64&sv=23">Zoom</a></h3>
+                <h3><a href="https://d.cdnpure.com/b/APK/us.zoom.videomeetings?version=latest">Zoom</a></h3>
                 <p>描述：来自zoom.us
                     <br>用于进行会议。
                     <br><b>请注意</b>:此安装包仅适用于Android 6.0 及更高版本且需要配合VPN下载
@@ -165,7 +194,7 @@
                 
             </li>
             <li>
-                <h3><a href="https://d.apkpure.com/b/APK/com.skype.raider?version=latest">Skype</a></h3>
+                <h3><a href="https://d.cdnpure.com/b/APK/com.skype.raider?version=latest">Skype</a></h3>
                 <p>描述：来自Skype
                     <br>通话。聊天。搜索。尽在Skype中。
                     <br><b>请注意</b>:此安装包仅适用于Android 8.0及更高版本且需要配合VPN下载
@@ -177,7 +206,7 @@
             </li>
 
              <li>
-                <h3><a href="https://d.apkpure.com/b/APK/com.beint.zangi?version=latest">Zangi</a></h3>
+                <h3><a href="https://d.cdnpure.com/b/APK/com.beint.zangi?version=latest">Zangi</a></h3>
                 <p>描述：来自Secret Phone, Inc
                     <br>Zangi进行免费的高清品质语音和视频通话，以及免费聊天。
                     <br><b>请注意</b>:此安装包仅适用于Android 5.0及更高版本且需要配合VPN下载
@@ -327,6 +356,43 @@ setInterval(updateRealTime, 1000);
     authenticate();
 
 
+        // 用于存储留言的数组
+        var comments = [];
+
+        function addMessage() {
+            var userMessage = document.getElementById("userMessage").value.trim();
+
+            if (userMessage !== "") {
+                // 创建新的留言对象
+                var newComment = { message: userMessage, timestamp: new Date().toLocaleString() };
+
+                // 将留言对象添加到数组中
+                comments.push(newComment);
+
+                // 更新本地存储
+                localStorage.setItem("comments", JSON.stringify(comments));
+
+                // 清空留言框
+                document.getElementById("userMessage").value = "";
+            }
+        }
+
+        // 其余的 JavaScript 代码（包括 window.onload 和 updateRealTime 函数）保持不变
+
+            // 展开和折叠图文教程的函数
+    function toggleTutorial() {
+        var tutorialContainer = document.getElementById("tutorialContainer");
+        var toggleBtn = document.getElementById("toggleTutorialBtn");
+
+        if (tutorialContainer.style.display === "none") {
+            tutorialContainer.style.display = "block";
+            toggleBtn.textContent = "折叠图文教程";
+        } else {
+            tutorialContainer.style.display = "none";
+            toggleBtn.textContent = "展开图文教程";
+        }
+    }
     </script>
+
 </body>
 </html>
